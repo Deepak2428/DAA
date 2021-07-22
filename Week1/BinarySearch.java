@@ -1,3 +1,7 @@
+
+//DAA Week1 Qusetion2
+
+
 import java.util.*;
 class BinarySearch
 {
