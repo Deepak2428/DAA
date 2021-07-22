@@ -1,3 +1,8 @@
+
+
+//Week1 ques 1
+
+
 import java.util.*;
 class LinearSearch
 {
