@@ -5,6 +5,8 @@ class duplicateKey
   public static void main(String args[])
   {
     Scanner scn= new Scanner(System.in);
+    int t=scn.nextInt();              // no of test cases
+    while(t>0){
     int n=scn.nextInt();
     int a[]= new int[n];
     for(int i=0;i<n;i++)
@@ -59,6 +61,8 @@ class duplicateKey
     else
     {
         System.out.print("\n PRESENT : "+(li-fi+1)+" TIMES");
+    }
+      t--;
     }
   }
 }
