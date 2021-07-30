@@ -1,4 +1,4 @@
-import java.util.scanner*;
+import java.util.*;
 class sum
 {
   public static void main(String args[])
@@ -18,11 +18,13 @@ class sum
         {
           if(a[i]+a[j]==a[k])
           {
-            System.out.print("\n"+ i,j,k);
+            System.out.print("\n"+ i+1,j+1,k+1);
+            return;
           }
         }
       }
     }
+    System.out.print("\n NO SUCH SEQUENCE");
   }
 }
           
