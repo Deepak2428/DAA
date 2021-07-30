@@ -15,12 +15,14 @@ class duplicateKey
     int l=0;
     int u=n-1;
     int fi=0;
+    int li=0;
     while(l<=u)
     {
       int mid= l+(u-l)/2;
       if(a[mid]==key)
       {
-        fi=mid-1;
+        fi=mid;
+        u=mid-1;
       }
       else if(a[mid]<key)
       {
@@ -31,6 +33,32 @@ class duplicateKey
         u=mid-1;
       }
     }
-    System.out.println(fi);
+    l=0;
+    u=n-1;
+    while(l<=u)
+    {
+      int mid= l+(u-l)/2;
+      if(a[mid]==key)
+      {
+        li=mid;
+        l=mid+1;
+      }
+      else if(a[mid]<key)
+      {
+        l=mid+1;
+      }
+      else
+      {
+        u=mid-1;
+      }
+    }
+    if(fi==0||li==0)
+    {
+        System.out.println("NOT PRESENT");
+    }
+    else
+    {
+        System.out.print("\n PRESENT : "+(li-fi+1)+" TIMES");
+    }
   }
 }
