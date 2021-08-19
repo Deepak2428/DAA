@@ -10,7 +10,10 @@ class QuickSort
 		{
 			int n=scn.nextInt();
 			int a[]= new int[n];
-			
+			for(int i=0;i<n;i++)
+			{
+				a[i]=scn.nextInt();
+			}
 			quickSort(a,0,n-1);
 			
 			for(int i=0;i<n;i++)
