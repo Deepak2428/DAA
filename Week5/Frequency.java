@@ -11,7 +11,7 @@ class Frequency
 			char a[]= new char[n];
 			for(int i=0;i<n;i++)
 			{
-				a[i]=scn.next().charAt(0);
+				a[i]=scn.nextChar();
 			}
 			
 			int freq[]=new int[26];
@@ -21,7 +21,7 @@ class Frequency
 				freq[idx]++;
 			}
 			int max=freq[0];
-			char c='a';
+			char c=' ';
 			for(int i=0;i<26;i++)
 			{
 				if(freq[i]>max)
