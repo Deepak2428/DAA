@@ -1,0 +1,31 @@
+import java.util.*;
+
+
+class Edge
+{
+    int v;
+    int nbr;
+    Edge(int v,int nbr)
+    {
+        this.v=v;
+        this.nbr=nbr;
+    }
+}
+
+class hasPath
+{
+    public static void main(String args[])
+    {
+        Scanner scn = new Scanner(System.in);
+        System.out.print("Enter number of vertices : ");
+        int vtces= scn.nextInt();
+        ArrayList<Edge> graph[]= new ArrayList[vtces];
+        for(int i=0;i<vtces;i++)
+        {
+            graph[i]=new ArrayList<>();
+        }
+        System.out.print("\nEnter number of Edges : ");
+        int e=scn.nextInt();
+        for(int i=0
+    }
+}
