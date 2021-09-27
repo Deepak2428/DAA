@@ -29,3 +29,21 @@ class isBipartite
             graph[v1].add(new Edge(v1,v2));
             graph[v2].add(new Edge(v2,v1));
         }
+	int visited[]= new int[vtces];
+        Arrays.fill(visited,-1);
+        System.out.print("\n\n IS BIPARTITE : ");
+        for(int i=0;i<vtces;i++)
+        {
+            if(visited[i]==-1)
+            {
+                boolean ans=isBipartite(graph,i,visited);
+                if(ans==false)
+                {
+                    System.out.print(false);
+                    return;
+                }
+                
+            }
+        }
+        System.out.print(true);
+    }
