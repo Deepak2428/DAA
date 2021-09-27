@@ -47,3 +47,36 @@ class isBipartite
         }
         System.out.print(true);
     }
+    public static boolean isBipartite(ArrayList<Edge> graph[],int src, int visited[])
+    {
+        ArrayDeque<pair> q= new ArrayDeque<>();
+        
+        q.add(new pair(src,0));
+        
+        while(q.size()>0)
+        {
+            pair rem= q.removeFirst();
+            
+            if(visited[rem.v]!=-1)
+            {
+                if(rem.level!=visited[rem.v])
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                visited[rem.v]=rem.level;
+            }
+            for(Edge e: graph[rem.v])
+            {
+                if(visited[e.nbr]==-1)
+                {
+                    q.add(new pair(e.nbr,rem.level+1));
+                }
+            }
+        }
+        
+        return true;
+    }
+}
