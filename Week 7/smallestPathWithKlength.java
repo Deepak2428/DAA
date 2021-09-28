@@ -48,7 +48,11 @@ class smallestPathWithKpathLength
         boolean visited[]= new boolean[vtces];
         
         dfs(graph,visited,src,dest,k,0,""+src);
-        
+        if(path==null)
+        {
+            System.out.print("\n No such Path exists ");
+            return;
+        }
         System.out.print("\n Shortest path with k length is : "+path+" @ "+pathwt);
         
     }
