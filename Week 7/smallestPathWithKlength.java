@@ -56,4 +56,30 @@ class smallestPathWithKpathLength
         System.out.print("\n Shortest path with k length is : "+path+" @ "+pathwt);
         
     }
+    public static void dfs(ArrayList<Edge> graph[],boolean visited[],int src,int dest,int k,int wsf,String psf)
+    {
+        if(src==dest)
+        {
+            if(psf.length()-1==k && wsf<pathwt)
+            {
+                pathwt=wsf;
+                path=psf;
+            }
+            
+            //System.out.println(psf);
+        }
+        
+        visited[src]=true;
+        
+        for(Edge e: graph[src])
+        {
+            if(visited[e.nbr]==false)
+            {
+                dfs(graph,visited,e.nbr,dest,k,wsf+e.wt,psf+""+e.nbr);
+            }
+        }
+        
+        visited[src]=false;
+    }
+}
     
