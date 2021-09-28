@@ -1,4 +1,4 @@
-import java.io.*;
+import java.util.*;
 class dijkstras
 {
 	static class Edge
@@ -66,7 +66,7 @@ class dijkstras
 			}
 			visited[rem.v]=true;
 			
-			System.out.println("["src"+"-"+rem.v+"@"+rem.wsf+"]");
+			System.out.println("["+src+"-"+rem.v+"@"+rem.wsf+"]");
 
 			for(Edge e: graph[rem.v])
 			{
