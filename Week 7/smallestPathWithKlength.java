@@ -13,6 +13,9 @@ class smallestPathWithKpathLength
             this.nbr=nbr;
             this.wt=wt;
     }
+	    
+     static String path ;
+     static int pathwt=Integer.MAX_VALUE;
     public static void main(String args[])
     {
         Scanner scn= new Scanner(System.in);
@@ -46,7 +49,7 @@ class smallestPathWithKpathLength
         System.out.print("\n Enter value of k : ");
         int k=scn.nextInt();
         boolean visited[]= new boolean[vtces];
-        
+       
         dfs(graph,visited,src,dest,k,0,""+src);
         if(path==null)
         {
