@@ -1,6 +1,4 @@
 import java.util.*;
-
-
 class Edge
 {
     int v;
@@ -11,7 +9,6 @@ class Edge
         this.nbr=nbr;
     }
 }
-
 class hasPath
 {
     public static void main(String args[])
@@ -50,7 +47,6 @@ class hasPath
         System.out.println("\nIs there a path : "+hasPath(graph,src,dest,visited));
         
     }
-
 	public static boolean hasPath(ArrayList<Edge> graph[],int src, int dest,boolean visited[])
     	{
         	if(src==dest)
@@ -71,7 +67,6 @@ class hasPath
                 }
             }
         }
-        
         return false;
     }
 }

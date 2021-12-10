@@ -32,7 +32,7 @@ class insertionSort
 				key=a[i];
 			}
 		}
-		System.out.println("\n Comparisions = "+comaprisions+"\n Shifts = "+shifts);
+		System.out.println("\n Comparisions = "+comparisions+"\n Shifts = "+shifts);
 		for(int i=0;i<n;i++)
 		{
 			System.out.print(a[i]+" ");

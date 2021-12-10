@@ -28,7 +28,7 @@ class SelectionSort
             for(int j=i+1;j<n;j++)
             {
                 comparisions++;
-                if(a[j]<a[i])
+                if(a[j]<a[index])
                 {
                     index=j;
                 }

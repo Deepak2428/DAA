@@ -18,7 +18,7 @@ class sum
         {
           if(a[i]+a[j]==a[k])
           {
-            System.out.print("\n"+ i+1,j+1,k+1);
+            System.out.print("\n"+" "+ (i+1)+" "+(j+1)+" "+(k+1));
             return;
           }
         }

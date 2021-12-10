@@ -24,7 +24,7 @@ class QuickSort
 		}
 	}
 	
-	public static void quickSort(int a[],int l,int h);
+	public static void quickSort(int a[],int l,int h)
 	{
 		
 		if(l>h)
@@ -41,7 +41,7 @@ class QuickSort
 	public static int partition(int a[],int pivot)
 	{
 		int j=0;
-		for(int i=0;i<a.length)
+		for(int i=0;i<a.length;)
 		{
 			if(a[i]>pivot)
 			{
